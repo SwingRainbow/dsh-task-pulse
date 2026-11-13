@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Task Pulse",
+    "description": "A read-only DSH tab that turns Markdown task records into an at-a-glance progress list, with a copyable prompt to bootstrap new projects."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "dsh-task-pulse",
+  "version": "0.2.0",
+  "description": "Task Pulse — DSH 任务进度页签：把 Markdown 任务记录变成一眼可读的进度列表。",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwingRainbow/dsh-task-pulse.git"
+  },
+  "homepage": "https://github.com/SwingRainbow/dsh-task-pulse#readme",
+  "bugs": {
+    "url": "https://github.com/SwingRainbow/dsh-task-pulse/issues"
+  },
+  "type": "module",
+  "icon": "./icon.svg",
+  "main": "lib/index.js",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "task",
+    "progress",
+    "markdown"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./src/*": "./src/*",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-workspace-files"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": "0.2.2-rc.1"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/parse.test.mjs && node test/build.test.mjs && node test/prompt-examples.test.mjs"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "prompts/*.md",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ]
+}

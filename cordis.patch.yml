@@ -1,0 +1,4 @@
+# Task Pulse bundle: one client-only row. lib/index.js is an intentional no-op host half.
+- insert:
+    - id: dsh-task-pulse
+      name: "dsh-task-pulse"
