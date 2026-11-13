@@ -1,8 +1,9 @@
 {
   "name": "dsh-task-pulse",
   "version": "0.2.0",
-  "description": "Task Pulse — DSH 任务进度页签：把 Markdown 任务记录变成一眼可读的进度列表。",
+  "description": "Read-only DSH progress tab for Markdown task records in docs/tasks.",
   "license": "MIT",
+  "author": "SwingRainbow",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SwingRainbow/dsh-task-pulse.git"
@@ -16,10 +17,13 @@
   "main": "lib/index.js",
   "keywords": [
     "dsh",
+    "deepseek-harness",
     "dsh-plugin",
     "task",
     "progress",
-    "markdown"
+    "task-management",
+    "markdown",
+    "ui"
   ],
   "exports": {
     ".": "./lib/index.js",
@@ -58,8 +62,12 @@
     "cordis.patch.yml",
     "locale/*.json",
     "prompts/*.md",
+    "assets/*",
+    "market/*.yml",
     "icon.svg",
     "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
     "LICENSE"
   ]
 }

@@ -1,0 +1,6 @@
+url: https://github.com/SwingRainbow/dsh-task-pulse
+name: SwingRainbow/dsh-task-pulse
+category: ui
+description:
+  en: Read-only DSH progress tab that turns docs/tasks Markdown records into a grouped, at-a-glance status page, with a copyable prompt that bootstraps the record format in new workspaces.
+  zh: 把 docs/tasks 下的 Markdown 任务记录变成分组、一眼可读的只读进度页签；新工作区可复制配套提示词接入。
