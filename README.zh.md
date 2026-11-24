@@ -4,8 +4,8 @@
 
 [![CI](https://github.com/SwingRainbow/dsh-task-pulse/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SwingRainbow/dsh-task-pulse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
-[![DSH](https://img.shields.io/badge/dsh-0.2.2--rc.1-4f7cff?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
-[![Version](https://img.shields.io/badge/version-0.2.0-4f7cff?style=flat-square)](package.json)
+[![DSH](https://img.shields.io/badge/dsh-0.2.3--alpha.2-4f7cff?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
+[![Version](https://img.shields.io/badge/version-0.2.1-4f7cff?style=flat-square)](package.json)
 
 **Task Pulse** 是一个只读的 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）插件。它在会话旁增加一个「进度」页签，把当前工作区 `docs/tasks/` 下的 Markdown 任务记录，投影成一页几秒就能看完的状态。
 
@@ -30,7 +30,7 @@
 
 ## 安装
 
-需要 DSH `0.2.2-rc.1` 和 Node.js 20 以上。
+需要 DSH `0.2.3-alpha.2`；开发构建使用 Node.js 20 以上。
 
 DSH 插件页：**插件 → 添加插件 → Git 地址**，填入：
 
@@ -83,8 +83,8 @@ dsh plugin --profile desktop add link:/absolute/path/to/dsh-task-pulse
 
 | | |
 |---|---|
-| DSH | `0.2.2-rc.1` |
-| Node.js | `>=20` |
+| DSH | `^0.2.3-alpha.2` |
+| Node.js | `>=20`（构建和测试） |
 | 客户端 | Web（`dsh.client.platform = "web"`） |
 | 数据 | 只读 `docs/tasks/` Markdown |
 

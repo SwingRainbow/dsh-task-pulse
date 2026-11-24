@@ -2,6 +2,14 @@
 
 All notable changes to Task Pulse are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [0.2.1] - 2026-11-24
+
+### Fixed
+
+- Updated `engines.dsh` to `^0.2.3-alpha.2` so the bundle loads after the DSH 0.2.3 upgrade.
+- Task detail modal now fits the plugin viewport and scrolls its body; header and footer stay visible.
+- Inline code in task fields renders as inline code instead of raw backticks.
+
 ## [0.2.0] - 2026-11-13
 
 ### Added
@@ -29,4 +37,5 @@ All notable changes to Task Pulse are documented here. The format follows [Keep 
 
 - Internal prototype: read-only board, decision list, activity list, and health view.
 
+[0.2.1]: https://github.com/SwingRainbow/dsh-task-pulse/releases/tag/v0.2.1
 [0.2.0]: https://github.com/SwingRainbow/dsh-task-pulse/releases/tag/v0.2.0

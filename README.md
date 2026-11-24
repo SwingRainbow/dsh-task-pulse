@@ -4,8 +4,8 @@
 
 [![CI](https://github.com/SwingRainbow/dsh-task-pulse/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SwingRainbow/dsh-task-pulse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
-[![DSH](https://img.shields.io/badge/dsh-0.2.2--rc.1-4f7cff?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
-[![Version](https://img.shields.io/badge/version-0.2.0-4f7cff?style=flat-square)](package.json)
+[![DSH](https://img.shields.io/badge/dsh-0.2.3--alpha.2-4f7cff?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
+[![Version](https://img.shields.io/badge/version-0.2.1-4f7cff?style=flat-square)](package.json)
 
 **Task Pulse** is a read-only [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) plugin. It adds a **Progress (进度)** view beside the conversation and projects the current workspace's `docs/tasks/` Markdown into a status page you can scan in a few seconds.
 
@@ -30,7 +30,7 @@ Task records are written for agents: long Markdown with every field. Task Pulse 
 
 ## Install
 
-Requires DSH `0.2.2-rc.1` and Node.js 20 or newer.
+Requires DSH `0.2.3-alpha.2`. For development, Node.js 20 or newer.
 
 From the DSH plugin UI: **Plugins → Add plugin → Git address**, then enter:
 
@@ -83,8 +83,8 @@ The plugin stays read-only; the agent creates the files after you paste the prom
 
 | | |
 |---|---|
-| DSH | `0.2.2-rc.1` |
-| Node.js | `>=20` |
+| DSH | `^0.2.3-alpha.2` |
+| Node.js | `>=20` (build and tests) |
 | Client | Web (`dsh.client.platform = "web"`) |
 | Data | Read-only `docs/tasks/` Markdown |
 
